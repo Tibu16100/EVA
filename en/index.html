@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web de etiquetas meta, metaviewport y mediaqueries">
+    <title>EVA</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+
+    <header id="header">
+        <h1 class="titulo-header">Responsive Web Design</h1>
+        <span class="fas fa-desktop icono"></span>
+    </header>
+
+    <nav id="enlaces">
+        <a href="#header"><span class="fas fa-arrow-up"></span></a>
+        <a href="#meta">Meta Tag</a>
+        <a href="#metaviewport">Meta Viewport Tag</a>
+        <a href="#mediaqueries">MediaQueries</a>
+    </nav>
+
+    <section id="video">
+        <div class="contenedor">
+            <h2 class="titulo">Responsive Web Design</h2>
+
+            <iframe width="1000" height="500" src="https://www.youtube.com/embed/abe1QaIlu5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+    <section id="meta" class="contenedor">
+        <div class="texto">
+            <h2 class="titulo">Meta Tag</h2>
+            <p class="descripcion">the meta tag is a tag that we have to put inside the tag <code>header</code>, this tag is used to configure the website specifying differents things to the browser. for instance:</p>
+
+            <ul>
+                <li class="descripcion"><strong>meta keyword tag:</strong> this tag will allow us to specify the browser the differents keywords of our website.</li>
+                <li class="descripcion"><strong>meta description tag:</strong> this tag will allow us to specify the browser the description of the page or website.</li>
+            </ul>
+        </div>
+
+        <div class="media">
+            <img src="../img/meta.png" alt="">
+        </div>
+    </section>
+    
+
+    <section id="metaviewport" class="contenedor">
+
+        <div class="media">
+            <img src="../img/metaviewport.png" alt="">
+        </div>
+
+        <div class="texto">
+            <h2 class="titulo">MetaViewport Tag</h2>
+            <p class="descripcion">Metaviewport is a meta tag that allow us to configure our website to be adapted on mobile devices properly</p>
+            <p class="descripcion">MetaViewport tag is required to be written in our code, esta etiqueta se coloca siempre en la etiqueta head.</p>
+        </div>
+    </section>
+
+    <section id="mediaqueries" class="contenedor">
+        <div class="texto">
+            <h2 class="titulo">Mediaqueries</h2>
+            <p class="descripcion">Mediaquery allow us to specify rules in our stylesheet and once it's fulfilled those rules, will be some changes on our website. Usually the rules are based on height measures.</p>
+            <p class="descripcion">Mediaquery is used to adapt the desktop website measures to others.</p>
+        </div>
+
+        <div class="media">
+            <img src="../img/mediaquery.png" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <h2>Restructure your website with responsive</h2>
+            <select name="language" id="language" onchange="language()">
+                <option value="ES">Español</option>
+                <option value="EN" selected>English</option>
+            </select>
+        </div>
+    </footer>
+
+
+
+<script src="../fontawesome/js/all.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

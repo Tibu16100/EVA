@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web de etiquetas meta, metaviewport y mediaqueries">
+    <title>EVA</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header id="header">
+        <h1 class="titulo-header">Responsive Web Design</h1>
+        <span class="fas fa-desktop icono"></span>
+    </header>
+
+    <nav id="enlaces">
+        <a href="#header"><span class="fas fa-arrow-up"></span></a>
+        <a href="#meta">Etiqueta Meta</a>
+        <a href="#metaviewport">Meta Viewport</a>
+        <a href="#mediaqueries">MediaQueries</a>
+    </nav>
+
+    <section id="video">
+        <div class="contenedor">
+            <h2 class="titulo">Responsive Design</h2>
+
+            <iframe src="https://www.youtube.com/embed/abe1QaIlu5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+    <section id="meta" class="contenedor">
+        <div class="texto">
+            <h2 class="titulo">Etiqueta Meta</h2>
+            <p class="descripcion">La etiqueta meta es una etiqueta meta que colocamos en la etiqueta <code>header</code> y nos sirve para darle configuraciones a la página web o para especificarle diferentes apartados al navegador, como por ejemplo:</p>
+
+            <ul>
+                <li class="descripcion"><strong>Etiqueta meta keyword:</strong> Esta etiqueta nos permitirá especificarle a google las palabras claves de nuestra página web.</li>
+                <li class="descripcion"><strong>Etiqueta meta description:</strong> Esta etiqueta nos permite especificarle al navegador la descripción de la página.</li>
+            </ul>
+        </div>
+
+        <div class="media">
+            <img src="img/meta.png" alt="">
+        </div>
+    </section>
+    
+
+    <section id="metaviewport" class="contenedor">
+
+        <div class="media">
+            <img src="img/metaviewport.png" alt="">
+        </div>
+
+        <div class="texto">
+            <h2 class="titulo">MetaViewport</h2>
+            <p class="descripcion">El MetaViewport es una etiqueta meta que nos permite configurar nuestra página web para que pueda adaptarse a dispositivos móbiles de manera correcta.</p>
+            <p class="descripcion">La etiqueta MetaViewport es obligatoria de introducirla en nuestro código, esta etiqueta se coloca siempre en la etiqueta head.</p>
+        </div>
+    </section>
+
+    <section id="mediaqueries" class="contenedor">
+        <div class="texto">
+            <h2 class="titulo">Mediaqueries</h2>
+            <p class="descripcion">El mediaquery nos permite especificarle reglas en nuestro hojas de estilo y una vez se cumplan esas reglas haya un cambio en nuestra web. Normalmente las reglas se basan en medidas de la altura.</p>
+            <p class="descripcion">El mediaquery se utiliza para poder adaptar a otros dispositivos nuestra página web</p>
+        </div>
+
+        <div class="media">
+            <img src="img/mediaquery.png" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <h2>Conviérte tu web Responsive.</h2>
+            <select name="language" id="language" onchange="language()">
+                <option value="ES" selected>Español</option>
+                <option value="EN">English</option>
+            </select>
+        </div>
+    </footer>
+
+
+
+<script src="fontawesome/js/all.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
